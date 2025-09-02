@@ -290,6 +290,44 @@
       outline: 3px solid #d32f2f;
       outline-offset: 2px;
     }
+/* updated call button */
+    .emergency-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff0000;
+  color: white;
+  padding: 15px 28px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  z-index: 1000;
+  animation: blink 1s infinite;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add bottom padding to page content so button doesn't overlap */
+body, #contact, footer {
+  padding-bottom: 100px; /* Adjust if needed */
+}
+
+/* Smaller round button on mobile */
+@media (max-width: 600px) {
+  .emergency-btn {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 60px;
+  }
+}
+
 
   </style>
 </head>
@@ -500,6 +538,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
+
    <!-- Floating Emergency Call Button -->
   <button class="emergency-btn" onclick="window.location.href='tel:8882079589'">
     📞 Call 8882079589
@@ -507,5 +546,6 @@
   
 </body>
 </html>
+
 
 
