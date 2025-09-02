@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Robot Ambulance Services | 24/7 Emergency Rescue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="24/7 Professional Emergency Ambulance Service. Quick response, advanced life support, ICU equipped. Call Robot Ambulance now!" />
+  <meta name="keywords" content="ambulance service, emergency ambulance, paramedics, 24/7 ambulance, medical transport, life support, rapid rescue" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Robot Ambulance Services | 24/7 Emergency Rescue" />
+  <meta property="og:description" content="Quick response ambulance service with advanced life support. Call Robot Ambulance anytime." />
+  <meta property="og:image" content="https://yourdomain.com/images/robotambulancelogo.png" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Robot Ambulance Services | 24/7 Emergency Rescue" />
+  <meta name="twitter:description" content="Quick response ambulance service with advanced life support. Call Robot Ambulance anytime." />
+  <meta name="twitter:image" content="https://yourdomain.com/images/robotambulancelogo.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Robot Ambulance Services",
+    "url": "https://yourdomain.com",
+    "telephone": "+918882079589",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "City Hospital Road, Green District",
+      "addressLocality": "Metro City",
+      "addressRegion": "State",
+      "postalCode": "800020",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Su 00:00-23:59",
+    "image": "https://yourdomain.com/images/robotambulancelogo.png",
+    "description": "24/7 Emergency Ambulance Services with advanced life support and rapid response."
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    nav {
+      background-color: #d32f2f;
+      display: flex;
+      align-items: center;
+      padding: 0.15rem 1rem;
+    }
+    /* Updated navbar brand font */
+    nav a.navbar-brand {
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 1.8rem; /* increased font size */
+      color: #fff !important;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    nav a.navbar-brand img {
+      height: 60px;
+      width: auto;
+      display: block;
+      border-radius: 8px;
+    }
+    /* Updated navbar links font */
+    nav a.nav-link {
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 1.1rem; /* increased font size */
+      color: #fff !important;
+      margin-right: 15px;
+    }
+    label {
+      cursor: pointer;
+    }
+    .hero {
+      background: url('images/image1.jpg') center/cover no-repeat;
+      color: white;
+      padding: 80px 0;
+      position: relative;
+    }
+    .hero-overlay {
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      top:0; left:0; width:100%; height:100%;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .booking-box {
+      background: rgba(255,255,255,0.95);
+      padding: 20px;
+      border-radius: 10px;
+      color: #000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .booking-box h5 {
+      color: #d32f2f;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .emergency-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff0000;
+      color: white;
+      padding: 15px 28px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      z-index: 1000;
+      animation: blink 1s infinite;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      cursor: pointer;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    h2.section-title {
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #d32f2f;
+      text-align: center;
+    }
+    #why-choose-robot {
+      padding: 60px 0;
+      background: #f5f5f5;
+    }
+    #why-choose-robot .service-card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #why-choose-robot .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    #why-choose-robot .service-card h5 {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    #why-choose-robot .service-card p {
+      flex-grow: 1;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    #why-choose-robot .service-card span.emoji {
+      font-size: 48px;
+      margin-bottom: 15px;
+      display: block;
+      user-select: none;
+      pointer-events: none;
+    }
+    #how {
+      padding: 60px 0;
+    }
+    #how .service-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: default;
+      color: #555;
+    }
+    #how .service-card h5 {
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #d32f2f;
+    }
+    #how .service-card p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+    #how .service-card span.emoji {
+      font-size: 48px;
+      margin-bottom: 15px;
+      display: block;
+      user-select: none;
+      pointer-events: none;
+    }
+    /* Updated Contact Section Style */
+    #contact {
+      background: #1b5e20; /* Dark Green */
+      color: white;
+      padding: 60px 0 20px;
+    }
+    #contact h2.section-title {
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    #contact a {
+      color: #ffd600;
+    }
+    #map {
+      width: 100%;
+      height: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-top: 20px;
+      border: 0;
+      loading: lazy;
+    }
+    footer {
+      background: #1a1a1a;
+      color: #bbb;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+    /* Responsive */
+    @media (min-width: 768px) {
+      #how .service-card {
+        margin-bottom: 0;
+        height: 240px;
+      }
+      #how .row > div {
+        margin-bottom: 0 !important;
+      }
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .service-card:hover {
+        cursor: pointer;
+      }
+    }
+    /* Social Media Footer Styles */
+    .social-footer {
+      text-align: center;
+      margin: 20px 0 0 0;
+    }
+    .social-footer span {
+      margin-right: 12px;
+      font-weight: 500;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+    .social-footer a {
+      display: inline-block;
+      color: #fff;
+      font-size: 1.7rem;
+      margin: 0 10px;
+      transition: color 0.2s;
+    }
+    .social-footer a:hover {
+      color: #ffd600; /* Highlight effect on hover */
+    }
+    /* Focus styles for inputs for accessibility */
+    input:focus, button:focus, a:focus {
+      outline: 3px solid #d32f2f;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"><img src="images/robotambulancelogo.png" alt="Robot Ambulance Logo" />Robot Ambulance</a>
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navMenu" aria-label="Toggle navigation">☰</button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#why-choose-robot" class="nav-link">Why Choose Us</a></li>
+        <li class="nav-item"><a href="#how" class="nav-link">How it Works</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Hero Section with Form -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1>Rapid 24/7 Emergency Ambulance Service</h1>
+          <p>Your lifeline when every second counts</p>
+        </div>
+        <div class="col-lg-5">
+          <div class="booking-box">
+            <h5>Book an Ambulance Now</h5>
+            <form id="emergencyForm" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" required aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label for="mobile">Mobile No.</label>
+                <input type="tel" id="mobile" class="form-control" pattern="[0-9]{10}" required aria-required="true" />
+              </div>
+              <button type="button" class="btn btn-danger btn-block font-weight-bold" onclick="bookAmbulance()">🚑 Book Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Combined Why Choose Robot Ambulance Section -->
+  <section id="why-choose-robot" class="container">
+    <h2 class="section-title">Why Choose Robot Ambulance?</h2>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="service-card" tabindex="0" role="button" aria-pressed="false" aria-label="24/7 Service Available">
+          <span class="emoji">⏰</span>
+          <h5>24/7 Service Available</h5>
+          <p>Always ready, any time of day.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="service-card" tabindex="0" role="button" aria-pressed="false" aria-label="Easy and Rapid Hospital Transfers">
+          <span class="emoji">🚑</span>
+          <h5>Easy and Rapid Hospital Transfers</h5>
+          <p>Swift and safe patient transport.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="service-card" tabindex="0" role="button" aria-pressed="false" aria-label="Easy Booking via Call or WhatsApp">
+          <span class="emoji">📞</span>
+          <h5>Easy Booking via Call/WhatsApp</h5>
+          <p>Quickly request ambulance support.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="service-card" tabindex="0" role="button" aria-pressed="false" aria-label="Professionally Trained Paramedics Onboard">
+          <span class="emoji">🩺</span>
+          <h5>Professionally Trained Paramedics Onboard</h5>
+          <p>Certified medical professionals onboard.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="service-card" tabindex="0" role="button" aria-pressed="false" aria-label="Specialized Ambulances for Neonatal and Childcare">
+          <span class="emoji">👶</span>
+          <h5>Specialized Ambulances for Neonatal and Childcare</h5>
+          <p>Care tailored for infants and children.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="service-card" tabindex="0" role="button" aria-pressed="false" aria-label="Cardiac/Trauma Care">
+          <span class="emoji">❤️</span>
+          <h5>Cardiac/Trauma</h5>
+          <p>Immediate care for critical cases.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="service-card" tabindex="0" role="button" aria-pressed="false" aria-label="Advanced Life Support">
+          <span class="emoji">🏥</span>
+          <h5>Advanced Life Support</h5>
+          <p>Equipped for advanced emergency care.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="service-card" tabindex="0" role="button" aria-pressed="false" aria-label="Service Areas Patna, Gaya, Muzaffarpur, Jehanabad">
+          <span class="emoji">📍</span>
+          <h5>Available in Patna, Gaya, Muzaffarpur, Jehanabad</h5>
+          <p>Extensive area coverage for your safety.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- How It Works Section with 4 Cards -->
+  <section id="how" class="container">
+    <h2 class="section-title">How It Works</h2>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="service-card" tabindex="0" role="button" aria-pressed="false" aria-label="Step 1: Request received via call or WhatsApp">
+          <span class="emoji">📞</span>
+          <h5>Request received via call/WhatsApp.</h5>
+          <p></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="service-card" tabindex="0" role="button" aria-pressed="false" aria-label="Step 2: Location auto-detected">
+          <span class="emoji">📍</span>
+          <h5>Location auto-detected.</h5>
+          <p></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="service-card" tabindex="0" role="button" aria-pressed="false" aria-label="Step 3: Nearest ambulance dispatched">
+          <span class="emoji">🚑</span>
+          <h5>Nearest ambulance dispatched.</h5>
+          <p></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="service-card" tabindex="0" role="button" aria-pressed="false" aria-label="Step 4: Immediate medical care provided">
+          <span class="emoji">❤️</span>
+          <h5>Immediate medical care provided.</h5>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact (styled dark green background) -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p><b>Phone:</b> <a href="tel:8882079589">8882079589</a></p>
+      <p><b>Email:</b> <a href="mailto:robotambulance@email.com">robotambulance@email.com</a></p>
+      <p><b>Location:</b> City Hospital Road, Green District, Metro City</p>
+      <iframe id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.561384858008!2d84.98746571537407!3d25.59409898373805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d3c6e7a705f35%3A0x8ecd8f7a15a5a64b!2sCity%20Hospital%2C%20Patna%2C%20Bihar%20800020!5e0!3m2!1sen!2sin!4v1692000000000!5m2!1sen!2sin"
+        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Robot Ambulance Location"></iframe>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Robot Ambulance Services | All Rights Reserved</p>
+    <!-- Social Media Footer Section -->
+    <div class="social-footer">
+      <span>Follow us:</span>
+      <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://youtube.com/yourchannel" target="_blank" aria-label="YouTube" rel="noopener noreferrer">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://instagram.com/yourpage" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+  
+  <script>
+    function bookAmbulance() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(pos) {
+          const name = document.getElementById('name').value;
+          const mobile = document.getElementById('mobile').value;
+          if(!name.trim() || !mobile.trim()) {
+            alert('Please fill in both name and mobile number.');
+            return;
+          }
+          const phonePattern = /^[0-9]{10}$/;
+          if(!phonePattern.test(mobile)){
+            alert('Please enter a valid 10-digit mobile number.');
+            return;
+          }
+          const lat = pos.coords.latitude;
+          const lon = pos.coords.longitude;
+          const message = `🚨 Emergency Request\nName: ${name}\nMobile: ${mobile}\nLocation: https://maps.google.com/?q=${lat},${lon}`;
+          window.open(`https://wa.me/918882079589?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+        }, function() {
+          alert('Unable to get your location. Please enable location services.');
+        });
+      } else {
+        alert('Geolocation not supported.');
+      }
+    }
+  </script>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Floating Emergency Call Button -->
+  <button class="emergency-btn" onclick="window.location.href='tel:8882079589'">
+    📞 Call 8882079589
+  </button>
+</body>
+</html>
